@@ -5,35 +5,35 @@ def password_strength(password):
     issues = []
 # Rules for length.
     if len(password) < 12:
-        issues.append("The password is too short (minimal suggested length is 12 characters).")
+        issues.append("The password is too short (minimal suggested length is 12 characters)")
     else:
         score += 1
 # Rules for complexity.
     if re.search(r'[A-Z]', password)
         score += 1
     else:
-        issues.append('No uppercase letters.')
+        issues.append("No uppercase letters, this weakens your password.")
     
-    if re.search(r'[a-z]', password)
+    if re.search(r'[a-z]', password):
         score += 1 
     else:
-        issues.append('No lowercase letters')
+        issues.append("No lowercase letters, this weakens your password.")
     
     if re.search(r'\d', password):
         score += 1
     else:
-        issues.append('No numbers')
+        issues.append("No numbers")
 
     if re.search(r'[!@#$%^^&*()_+<>?:"{}|]', password):
         score += 1
     else:
-        issues.apend('No special characters.')
+        issues.apend("No special characters.")
 
     return score, issues
     
     # User prompt
     if __name__ == "__main__":
-    pwd = input("Enter a password for testing:")
+    pwd = input ("Enter a password for testing:")
     score, problem = password_strength(pwd)
 
     print(f"\nScore: {score}\5")
