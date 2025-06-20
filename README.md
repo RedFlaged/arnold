@@ -1,26 +1,31 @@
-# password_checker
-A Python based tool that checks the strength of a password, based on best practices and breached passwords.
+# 🛡️ ArnoldCheck
 
----- FETURES ----
+**ArnoldCheck** is a secure CLI tool that checks your password strength and verifies whether it has been exposed in known data breaches — using [HaveIBeenPwned](https://haveibeenpwned.com/)'s API.
 
-+ number of characters/ minimal lenght 
-+ upper/lower case requirements
-+ special characters/symbols
-+ check against breached paswords lists
+---
 
-Available as a CLI tool 
+## 🔍 Features
+
+- 🚨 Checks if your password has been breached (HIBP API)
+- 📊 Gives a simple strength rating: Weak / Medium / Strong
+- 🎨 Colored terminal output using `rich`
+- 🔒 Hides password input with `getpass`
+- 📁 Logs checks to `log.txt`
+
+---
+
+## 🧪 Demo
+
+![arnoldcheck-demo](https://via.placeholder.com/700x200?text=Demo+GIF+or+Screenshot)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/yourusername/ArnoldCheck.git
+cd ArnoldCheck
+pip install -r requirements.txt
 
 
-
-!!!As will always be beginner-friendly and open-source!!!
-
-
-
-Requirements
-- Python 3.7+
-- 'requirements' library
-
-Install dependancies:
-*BASH
-# pip install requests
-
+#As always free and open source...
