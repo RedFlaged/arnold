@@ -23,9 +23,11 @@
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourusername/ArnoldCheck.git
-cd ArnoldCheck
+git clone https://github.com/RedFlaged/password_checker.git
+cd password_checker
 pip install -r requirements.txt
+python3 arnoldchecker.py
 
 
+#Test and relax :))
 #As always free and open source...
